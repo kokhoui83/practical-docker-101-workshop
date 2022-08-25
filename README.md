@@ -1,1 +1,1 @@
-# practical-docker-101-workshop
+# Practical Docker 101 Workshop
