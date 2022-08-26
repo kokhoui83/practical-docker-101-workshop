@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const qoutes = require('./qoutes')
+const qoutes = require('./quotes')
 
 const host = '0.0.0.0'
 const port = 8002
