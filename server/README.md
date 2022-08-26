@@ -2,19 +2,32 @@
 
 ## Requirements
 - python 3.10.x
-- pipenv
+- virtualenv or pipenv
 
 ## Setup
 - setup virtual environment
 ```
+# virtualenv
+virtualenv .venv
+
+# pipenv
+mkdir .venv
 pipenv --python 3.10
+```
+- activate virtual environment
+```
+# activate via virtualenv
+source .venv/bin/activate
+
+# activeate via pipenv
+pipenv shell
 ```
 - install dependencies
 ```
-# activate virtualenv
-pipenv shell
+# install dependencies via pip
+pip install -r requirements.txt
 
-#install dependencies
+# install dependencies via pipenv
 pipenv install
 ```
 
