@@ -10,3 +10,17 @@ This is the base code containing the web and server application
 # Applications
 - [web](./web/README.md)
 - [server](./server/README.md)
+
+# Architecture
+```plantuml
+@startuml
+scale 2
+package "host" {
+    [browser]
+}
+package "docker" {
+    [server]
+    [web]
+}
+@enduml
+```
