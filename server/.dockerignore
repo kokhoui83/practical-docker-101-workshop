@@ -1,0 +1,6 @@
+.venv
+.gitignore
+Dockerfile
+Pipfile
+Pipfile.lock
+README.md
