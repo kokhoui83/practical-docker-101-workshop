@@ -12,24 +12,4 @@ This is the base code containing the web and server application
 - [server](./server/README.md)
 
 # Architecture
-```plantuml
-@startuml
-scale 2
-package "host machine" {
-    [browser]
-
-    component "docker" {
-        port p8000
-        port p8001
-        [server]
-        [web]
-    }
-}
-
-
-browser <-- p8000
-p8000 <--- web
-browser --> p8001
-p8001 --> server
-@enduml
-```
+![architecture](./docs/diagrams/out/architecture_overview/architecture_overview.png)
