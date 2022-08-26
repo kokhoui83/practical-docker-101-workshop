@@ -31,4 +31,4 @@ def ping():
 @app.get("/randomquote")
 def getRandomQoute():
     quote = services.get_random_quote()
-    return json.dumps(quote)
+    return quote
