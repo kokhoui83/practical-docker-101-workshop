@@ -1,6 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import random
+import json
+import services
 
 app = FastAPI()
 origins = [
@@ -25,3 +27,8 @@ def read_root():
 @app.get("/ping")
 def ping():
     return f"pong { random.randrange(1, 100, 1) }"
+
+@app.get("/randomquote")
+def getRandomQoute():
+    quote = services.get_random_quote()
+    return json.dumps(quote)
