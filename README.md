@@ -15,12 +15,21 @@ This is the base code containing the web and server application
 ```plantuml
 @startuml
 scale 2
-package "host" {
+package "host machine" {
     [browser]
+
+    component "docker" {
+        port p8000
+        port p8001
+        [server]
+        [web]
+    }
 }
-package "docker" {
-    [server]
-    [web]
-}
+
+
+browser <-- p8000
+p8000 <--- web
+browser --> p8001
+p8001 --> server
 @enduml
 ```
