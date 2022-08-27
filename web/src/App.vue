@@ -1,10 +1,12 @@
 <script setup>
 import PingPong from './components/PingPing.vue'
+import Qoutes from './components/Qoutes.vue'
 </script>
 
 <template>
   <main>
     <PingPong />
+    <Qoutes />
   </main>
 </template>
 
