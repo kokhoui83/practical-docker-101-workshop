@@ -6,6 +6,7 @@ package "host machine" {
     component "docker" {
         port p8000
         port p8001
+        [api]
         [server]
         [web]
     }
@@ -16,4 +17,5 @@ browser <-- p8000
 p8000 <--- web
 browser --> p8001
 p8001 --> server
+server --> api
 @enduml
