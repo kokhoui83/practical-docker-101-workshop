@@ -3,7 +3,7 @@ import json
 
 def get_random_quote():
     try:
-        response = requests.get("http://localhost:8002/quote")
+        response = requests.get("http://api:8002/quote")
 
         if response.status_code == 200:
             return json.loads(response.text)
