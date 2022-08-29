@@ -10,6 +10,7 @@ This is the base code containing the web and server application
 # Applications
 - [web](./web/README.md)
 - [server](./server/README.md)
+- [api](./api/README.md)
 
 # Architecture
 ![architecture](./docs/diagrams/out/architecture_overview/architecture_overview.png)

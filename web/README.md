@@ -47,7 +47,7 @@ docker build -t sample-web-app:0.0.1 .
 docker run -d --rm -p <host-port>:<container-port> --name <container-name> <image-name>
 
 # example
-docker run -d --rm -p 8001:8001 --name web-app web-server-app:0.0.1
+docker run -d --rm -p 8001:8001 --name web-app sample-web-app:0.0.1
 ```
 
 - `## TODO: Create docker-compose file` <-- do this before running the compose command
@@ -64,7 +64,7 @@ docker compose up -d
 docker stop <container-name>
 
 # example
-docker stop server-app
+docker stop web-app
 ```
 
 - if started with `docker compose`
