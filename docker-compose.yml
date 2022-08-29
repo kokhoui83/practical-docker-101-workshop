@@ -2,6 +2,7 @@ version: "3.8"
 services:
   web:
     image: sample-web-app:0.0.1
+    container_name: sample-web-app
     build:
       context: ./web
     environment:
@@ -12,6 +13,7 @@ services:
       - sample-app-net
   server:
     image: sample-server-app:0.0.1
+    container_name: sample-server-app
     build:
       context: ./server
     ports:
@@ -20,6 +22,7 @@ services:
       - sample-app-net
   api:
     image: sample-api-service:0.0.1
+    container_name: sample-api-service
     build:
       context: ./api
     networks:
