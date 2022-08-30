@@ -2,5 +2,4 @@ node_modules
 .gitignore
 .nvmrc
 Dockerfile
-package*.json
 README.md

@@ -1,0 +1,20 @@
+# base image
+FROM python:3.10.6
+
+# install pipenv
+RUN pip install pipenv
+
+# set work directory
+WORKDIR /usr/src/app
+
+# copy pipfile
+COPY Pipfile Pipfile.lock ./
+
+# install project dependencies to system without virtual env
+RUN pipenv install --system --deploy
+
+# copy src code
+COPY . .
+
+# run server
+CMD ["python", "src/server.py"]
